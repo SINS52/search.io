@@ -151,7 +151,8 @@ ul li a img {
 .web img {
     width: 50px;
     height: fit-content;    
-    align-items: center;
+    display:inline-block;
+    transform:translatex(0px) translatey(24px);
 }
 
 .link {
