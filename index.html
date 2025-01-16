@@ -1,0 +1,39 @@
+<!DOCTYPE html>  
+<html lang="en">
+<head>  
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>New Tab</title>  
+  <link rel="stylesheet" href="style.css">  
+</head>  
+<body>
+<div class="logo"><header><img src="hoyoverse-logo-42461.png" alt="logo"></header></div>
+  <main>
+      <div class="searchbox">
+        <h4>Searching</h4>
+        <form action="https://www.bing.com/search">
+          <input type="search" name="q" id="src" placeholder="Cari sesuatu..." oninput="toggleSearchButton()">
+          <button type="submit" id="searchButton" disabled="">
+            <img src="search.png" alt="search">
+          </button>
+        </form>
+      </div>
+    </main>
+    <div class="icon">
+      <div class="menu-icon" onclick="toggleMenu()"><img src="menu.png" alt="menu"></div>
+    </div>
+    <nav>
+      <div class="menu">
+        <ul class="aplikasi">
+          <li><a href="https://www.tiktok.com" id="tiktok"><img src="Tiktok.png" alt=""></a></li>
+          <li><a href="https://www.youtube.com" id="youtube"><img src="youtube.webp" alt=""></a></li>
+        </ul>
+        <div class="web">  
+          <li><a href="https://bluearchive.fandom.com/wiki/Blue_Archive_Wiki"><img src="blue-archive.jpg" alt="link"></a></li>
+        </div>
+      </div>
+    </nav>
+      <script src="script.js"></script>
+
+</body>
+</html>

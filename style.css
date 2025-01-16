@@ -1,0 +1,153 @@
+body {
+    background-image: url(Wallpaper.png);
+    background-position: start;
+    background-repeat: no-repeat;
+}
+
+header {
+    position: absolute;
+    top: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+header img {
+    width: 300px;
+    height: fit-content;
+}
+
+.logo {
+    box-shadow: 5px 5px 2000px 50px white;
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15%;
+}
+
+.searchbox {
+    backdrop-filter: blur(4px);
+    border: 1px solid white;
+    justify-items: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 70px;
+    border-radius: 3px;
+    align-items: center;
+}
+
+form input {
+    padding: 10px;
+    padding-right: 20px;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 3px;
+}
+
+.searchbox h4 {
+    position: absolute;
+    color: white;
+    font-family: Comic sans MS;
+    top: 10%;
+    left: 45%;
+    transform: translateX(-50%);
+}
+
+form button {
+    background-color: transparent;
+    border: 1px solid white;
+    width: 37px;
+    height: 38px;
+    position: absolute;
+    border-radius: 7%;
+}
+
+form button img {
+    width: 25px;
+    height: 27px;
+}
+
+ul li a img {
+    width: 50px;
+}
+
+.menu-icon {
+    z-index: 1000;
+}
+
+.icon {
+    position: absolute;
+    bottom: 10%;
+    width: 99%;
+    justify-items: center;
+    z-index: 1003;
+}
+
+.menu-icon img:hover {
+    transition: all 0.2 ease-out;
+    border-bottom: 4px solid rgb(0, 0, 0);
+}
+
+.menu-icon img {
+    color: grey;
+    width: 30px;
+    height: fit-content;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgb(0, 0, 0);
+    z-index: 1001;
+  }
+  
+  nav {
+    background-color: #00031f86 ;
+    position: fixed;
+    box-shadow: 0px 1px 2px black;
+    bottom: -1000px;
+    width: 101%;
+    height: 90%;
+    transition: bottom 0.3s ease-in-out;
+    padding-top: 40px;
+    z-index: 100;
+    margin-left: -10px;
+    border-top: 1px solid rgb(255, 255, 255);
+
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    margin-left: 30px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    display: block;
+    color: black;
+    margin-left: -20px;
+    margin-top: -2em;
+    gap: 10;
+  }
+  
+  nav.active {
+    bottom: 0;
+  }
+
+.aplikasi {
+    display: flex;
+}
+
+.web {
+    display: grid;
+    justify-content: right;
+}
+
+.web img {
+    width: 50px;
+    height: fit-content;    
+}
