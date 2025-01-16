@@ -150,10 +150,12 @@ ul li a img {
 .web img {
     width: 50px;
     height: fit-content;    
+    align-items: center;
 }
 
 .link {
     background-color: #00031f3d;
     width: 400px;
     height: 100px;
+    border: 1px solid white;
 }
