@@ -39,8 +39,9 @@ header img {
 }
 
 form input {
+    padding-left: 30px;
     padding: 10px;
-    padding-right: 20px;
+    padding-right: 30px;
     background: transparent;
     border: 1px solid white;
     color: white;
