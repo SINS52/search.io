@@ -2,30 +2,39 @@ body {
     background-image: url(Wallpaper.png);
     background-position: start;
     background-repeat: no-repeat;
-}
-
-header {
+  }
+  
+  body.active {
+    background-image: url(Wallpaper_BA-1.jpeg);
+    background-position: start;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  
+  
+  header {
     position: absolute;
     top: 1px;
     left: 50%;
     transform: translateX(-50%);
-}
-
-header img {
+  }
+  
+  header img {
     width: 300px;
     height: fit-content;
-}
-
-.logo {
+  }
+  
+  .logo {
     box-shadow: 5px 5px 2000px 50px white;
     position: absolute;
     top: 70px;
     left: 50%;
     transform: translateX(-50%);
     width: 15%;
-}
-
-.searchbox {
+  }
+  
+  .searchbox {
     backdrop-filter: blur(4px);
     border: 1px solid white;
     justify-items: center;
@@ -36,9 +45,9 @@ header img {
     padding: 70px;
     border-radius: 3px;
     align-items: center;
-}
-
-form input {
+  }
+  
+  form input {
     padding-left: 30px;
     padding: 10px;
     padding-right: 30px;
@@ -46,53 +55,53 @@ form input {
     border: 1px solid white;
     color: white;
     border-radius: 3px;
-}
-
-.searchbox h4 {
+  }
+  
+  .searchbox h4 {
     position: absolute;
     color: white;
     font-family: Comic sans MS;
     top: 10%;
     left: 45%;
     transform: translateX(-50%);
-}
-
-form button {
+  }
+  
+  form button {
     background-color: transparent;
     border: 1px solid white;
     width: 37px;
     height: 38px;
     position: absolute;
     border-radius: 7%;
-}
-
-form button img {
+  }
+  
+  form button img {
     width: 25px;
     height: 27px;
-}
-
-ul li a img {
+  }
+  
+  ul li a img {
     width: 50px;
-}
-
-.menu-icon {
+  }
+  
+  .menu-icon {
     z-index: 1000;
-}
-
-.icon {
+  }
+  
+  .icon {
     position: absolute;
     bottom: 10%;
     width: 99%;
-    justify-items: center;
+    justify-items: end;
     z-index: 1003;
-}
-
-.menu-icon img:hover {
+  }
+  
+  .menu-icon img:hover {
     transition: all 0.2 ease-out;
     border-bottom: 4px solid rgb(0, 0, 0);
-}
-
-.menu-icon img {
+  }
+  
+  .menu-icon img {
     color: grey;
     width: 30px;
     height: fit-content;
@@ -102,7 +111,7 @@ ul li a img {
   }
   
   nav {
-    background-color: #00031f86 ;
+    background-color: #00031f86;
     position: fixed;
     box-shadow: 0px 1px 2px black;
     bottom: -1000px;
@@ -113,7 +122,7 @@ ul li a img {
     z-index: 100;
     margin-left: -10px;
     border-top: 1px solid rgb(255, 255, 255);
-
+  
   }
   
   nav ul {
@@ -138,26 +147,86 @@ ul li a img {
   nav.active {
     bottom: 0;
   }
-
-.aplikasi {
+  
+  .aplikasi {
     display: flex;
-}
-
-.web {
+  }
+  
+  .web-right {
     display: grid;
+    grid-template-columns: repeat(10, 3fr);
     justify-items: legacy;
-}
-
-.web img {
-    width: 50px;
-    height: fit-content;    
-    display:inline-block;
-    transform:translatex(0px) translatey(24px);
-}
-
-.link {
+    width: 50%;
+    margin-left: 70px;
+    gap: 50px;
+    border: 2px solid red;
+    height: 100%;
+  }
+  
+  .web-right img {
+    width: 70px;
+    height: fit-content;
+    display: inline-block;
+    transform: translatex(15px) translatey(15px);
+    border: 1px solid white;
+  }
+  
+  .link {
     background-color: #00031f3d;
-    width: 400px;
+    width: 300px;
     height: 100px;
     border: 1px solid white;
-}
+    margin-left: -40px;
+  }
+  
+  #link1 {
+    /*asu*/
+  
+  }
+  
+  .link a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .web-right a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  #title1 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 120px;
+    top: 9%;
+  }
+  
+  #subtitle1 {
+    position: absolute;
+    top: 13%;
+    left: 7.8%;
+  }
+  
+  #title2 {
+    position: absolute;
+    top: 9%;
+    left: 430px;
+  }
+  
+  #subtitle2 {
+    position: absolute;
+    top: 13%;
+    left: 430px;
+  }
+  
+  #tombol-tema {
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    padding: 5px;
+    padding-left: 10px;
+    position: absolute;
+    top: 1px;
+    left: 1408px;
+  }

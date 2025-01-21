@@ -1,40 +1,74 @@
-<!DOCTYPE html>  
+<!DOCTYPE html>
 <html lang="en">
-<head>  
-  <meta charset="UTF-8">  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-  <title>New Tab</title>  
-  <link rel="stylesheet" href="style.css">  
-</head>  
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Tab</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="plana.jpg" type="image/png">
+  <link rel="manifest" href="manifest.json">
+</head>
+
 <body>
-<div class="logo"><header><img src="hoyoverse-logo-42461.png" alt="logo"></header></div>
+  <div class="logo">
+    <header><img src="hoyoverse-logo-42461.png" alt="logo"></header>
+  </div>
   <main>
-      <div class="searchbox">
-        <h4>Searching</h4>
-        <form action="https://www.bing.com/search">
-          <input type="search" name="q" id="src" placeholder="Cari sesuatu..." oninput="toggleSearchButton()">
-          <button type="submit" id="searchButton" disabled="">
-            <img src="search.png" alt="search">
-          </button>
-        </form>
-      </div>
-    </main>
-    <div class="icon">
-      <div class="menu-icon" onclick="toggleMenu()"><img src="menu.png" alt="menu"></div>
+    <div class="searchbox">
+      <h4>Searching</h4>
+      <form action="https://www.bing.com/search">
+        <input type="search" name="q" id="src" placeholder="Cari sesuatu..." oninput="toggleSearchButton()">
+        <button type="submit" id="searchButton" disabled="">
+          <img src="search.png" alt="search">
+        </button>
+      </form>
     </div>
-    <nav>
-      <div class="menu">
-        <ul class="aplikasi">
-          <li><a href="https://www.tiktok.com" id="tiktok"><img src="Tiktok.png" alt=""></a></li>
-          <li><a href="https://www.youtube.com" id="youtube"><img src="youtube.webp" alt=""></a></li>
-        </ul>
-        <div class="web"><a href="https://bluearchive.fandom.com/wiki/Blue_Archive_Wiki">
-          <div class="link"><img src="blue-archive.jpg" alt="link"></div>
-        </a>
+  </main>
+  <div class="icon">
+    <div class="menu-icon" onclick="toggleMenu()"><img src="menu.png" alt="menu"></div>
+  </div>
+  <nav>
+    <div class="menu">
+      <ul class="aplikasi">
+        <li><a href="https://www.tiktok.com" id="tiktok"><img src="Tiktok.png" alt=""></a></li>
+        <li><a href="https://www.youtube.com" id="youtube"><img src="youtube.webp" alt=""></a></li>
+      </ul>
+      <div class="web-right">
+        <div class="link"><img src="blue-archive.jpg" alt="link" id="image1">
+          <a href="https://bluearchive.fandom.com/wiki/Blue_Archive_Wiki">
+            <div class="title1">
+              <div id="title1">
+                <p>Blue Archive(Fandom)</p>
+              </div>
+              <div id="subtitle1">
+                <p>Fandom</p>
+              </div>
+          </a>
         </div>
       </div>
-    </nav>
-      <script src="script.js"></script>
+      <div class="link"><img src="arona.jpeg" alt="link">
+        <a href="https://en.wikipedia.org/wiki/Blue_Archive">
+          <div id="title2">
+            <p>Blue Archive</p>
+          </div>
+          <div id="subtitle2"><p>Wikipedia</p>
+      </div>
+    </a>
+    <div class="link"><img src="shiroko.jpeg" alt="link">
+      <a href="https://en.wikipedia.org/wiki/Blue_Archive">
+        <div id="title3">
+          <p>Blue Archive</p>
+        </div>
+        <div id="subtitle3"><p>Wikipedia</p>
+    </div>
+    </a>  
+    </div>
+    <button type="button" onclick="changeThemes()" id="tombol-tema">Change themes</div>
+    </div>
+  </nav>
+  <script src="script.js"></script>
 
 </body>
+
 </html>
