@@ -1,7 +1,7 @@
 {  
   "name": "Search.sins",  
   "short_name": "Aplikasi",  
-  "start_url": "/",  
+  "start_url": "https://sins52.github.io/search.io/",  
   "display": "standalone",  
   "background_color": "#000000",  
   "theme_color": "#000000",  
